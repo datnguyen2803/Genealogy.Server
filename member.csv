@@ -1,0 +1,9 @@
+id,surname,lastname,gender,dob,dod,birth_place,current_place,is_clan_leader,gen_no,image,note
+0054042f-4d37-4800-a8ed-7ad25e23b764,Nguyễn,"Văn Oanh",0,"0001-01-01 00:00:00","0001-01-01 00:00:00",NULL,NULL,1,2,NULL,"Tự Phúc Huy"
+13b2f73c-65f2-4c1a-baa8-00e9cd5b18ac,"Nguyễn ",Thị,1,"0001-01-01 00:00:00","0001-01-01 00:00:00",NULL,NULL,0,3,NULL,"Không nhớ tên"
+1a719c1b-8b56-42eb-adf2-4e40681d8806,NULL,NULL,1,"0001-01-01 00:00:00","0001-01-01 00:00:00",NULL,NULL,0,1,NULL,"Hiệu Triệu Bình"
+2d4bf196-a96a-47ed-a64a-f5f9c95be937,Nguyễn,Văn,0,"0001-01-01 00:00:00","0001-01-01 00:00:00",NULL,NULL,0,3,NULL,"Không nhớ tên"
+58d017d5-ef0c-4ea0-ae95-b8e50fa37b6d,Nguyễn,"Phúc Lợi",0,"0001-01-01 00:00:00","0001-01-01 00:00:00",NULL,NULL,1,1,NULL,NULL
+812527b5-2a2e-42bc-b5dd-9211bb750987,Nguyễn,"Văn Hoành",0,"0001-01-01 00:00:00","0001-01-01 00:00:00",NULL,NULL,1,3,NULL,NULL
+c51a1ee3-aedf-4215-bb24-e23f332e4749,Đỗ,"Thị Lượng",1,"0001-01-01 00:00:00","0001-01-01 00:00:00",NULL,NULL,0,2,NULL,NULL
+d93088c1-9f47-4034-897f-10fdec8c5700,Nguyễn,Thị,1,"0001-01-01 00:00:00","0001-01-01 00:00:00",NULL,NULL,0,3,NULL,"Bà Tư Mễ"

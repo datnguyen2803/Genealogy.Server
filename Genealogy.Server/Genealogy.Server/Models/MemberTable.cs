@@ -7,9 +7,9 @@ public partial class MemberTable
 {
     public string Id { get; set; } = null!;
 
-    public string Surname { get; set; } = null!;
+    public string? Surname { get; set; } = null!;
 
-    public string Lastname { get; set; } = null!;
+    public string? Lastname { get; set; } = null!;
 
     public byte Gender { get; set; }
 

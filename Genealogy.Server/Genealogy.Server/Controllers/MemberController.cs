@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Genealogy.Models;
+using Genealogy.Common;
 
 namespace Genealogy.Controllers
 {
@@ -55,7 +56,7 @@ namespace Genealogy.Controllers
     }
 
 
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class MemberController : ControllerBase
     {
@@ -68,12 +69,14 @@ namespace Genealogy.Controllers
 
         // GET: api/Member
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<MemberTable>>> GetMemberTables()
+        public async Task<ActionResult<IEnumerable<MemberTable>>> GetAll()
         {
+            //ResponseModel response = new ResponseModel();
           if (_context.MemberTables == null)
           {
               return NotFound();
           }
+
             return await _context.MemberTables.ToListAsync();
         }
 
