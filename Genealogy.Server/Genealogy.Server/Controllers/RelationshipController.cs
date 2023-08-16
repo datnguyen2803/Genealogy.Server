@@ -9,7 +9,7 @@ using Genealogy.Models;
 
 namespace Genealogy.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class RelationshipController : ControllerBase
     {
@@ -22,7 +22,7 @@ namespace Genealogy.Controllers
 
         // GET: api/Relationship
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<RelationshipTable>>> GetRelationshipTables()
+        public async Task<ActionResult<IEnumerable<RelationshipTable>>> GetAll()
         {
           if (_context.RelationshipTables == null)
           {
@@ -31,23 +31,23 @@ namespace Genealogy.Controllers
             return await _context.RelationshipTables.ToListAsync();
         }
 
-        // GET: api/Relationship/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<RelationshipTable>> GetRelationshipTable(string id)
-        {
-          if (_context.RelationshipTables == null)
-          {
-              return NotFound();
-          }
-            var relationshipTable = await _context.RelationshipTables.FindAsync(id);
+        //// GET: api/Relationship/5
+        //[HttpGet("{id}")]
+        //public async Task<ActionResult<RelationshipTable>> GetRelationshipTable(string id)
+        //{
+        //  if (_context.RelationshipTables == null)
+        //  {
+        //      return NotFound();
+        //  }
+        //    var relationshipTable = await _context.RelationshipTables.FindAsync(id);
 
-            if (relationshipTable == null)
-            {
-                return NotFound();
-            }
+        //    if (relationshipTable == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            return relationshipTable;
-        }
+        //    return relationshipTable;
+        //}
 
         // PUT: api/Relationship/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754

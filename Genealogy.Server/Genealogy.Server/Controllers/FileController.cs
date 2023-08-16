@@ -181,7 +181,8 @@ namespace Genealogy.Controllers
                 relationship.MainMemId = workSheet[EXCEL_COL_NAME[(int)RELATIONSHIP_COL_INDEX.MAIN_MEM_ID] + i.ToString()].StringValue;
                 relationship.SubMemId = workSheet[EXCEL_COL_NAME[(int)RELATIONSHIP_COL_INDEX.SUB_MEM_ID] + i.ToString()].StringValue;
                 relationship.RelateCode = (byte)workSheet[EXCEL_COL_NAME[(int)RELATIONSHIP_COL_INDEX.RELATE_CODE] + i.ToString()].Int32Value;
-                relationship.DateStart = DateTime.Parse(workSheet[EXCEL_COL_NAME[(int)RELATIONSHIP_COL_INDEX.DATE_START] + i.ToString()].StringValue);
+                string dateStartStr = workSheet[EXCEL_COL_NAME[(int)RELATIONSHIP_COL_INDEX.DATE_START] + i.ToString()].StringValue;
+                relationship.DateStart = dateStartStr != null ? DateTime.Parse(dateStartStr) : DateTime.MinValue;
 
                 _context.RelationshipTables.Add(relationship);
                 try
